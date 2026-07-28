@@ -86,3 +86,27 @@ console.log(tinderUser.hasOwnProperty("isLoggedIn"))
 - Object.entries() returns key-value pairs.
 - hasOwnProperty() checks whether a property exists.
 */
+
+
+const course = {
+    coursename: "JavaScript",
+    price: 299,
+    courseInstructor: "Bhakti Sharma"
+}
+
+const { courseInstructor : Instructor } = course
+
+// console.log(courseInstructor);
+console.log(Instructor);
+
+// {
+//     "name": "Bhakti",
+//     "courcename": "JavaScript",
+//     "price": 299,
+// }
+
+[
+    {},
+    {},
+    {}
+]
