@@ -21,7 +21,7 @@ Inner variable can have the same name as outer variable (Shadowing).
 */
 
 function one() {
-    const username = "hitesh"
+    const username = "Bhakti"
 
     function two() {
         const website = "youtube"
@@ -40,9 +40,9 @@ Parent function cannot access child's variables.
 */
 
 if (true) {
-    const username = "hitesh"
+    const username = "Bhakti"
 
-    if (username === "hitesh") {
+    if (username === "Bhakti") {
         const website = "youtube"
         console.log(username + website);
     }
