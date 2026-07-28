@@ -1,2 +1,2 @@
-# js
+# JavaScript
 JavaScript practice repository
