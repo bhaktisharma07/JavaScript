@@ -19,9 +19,9 @@ Yaha har number me 10 add ho raha hai
 // CHAINING
 
 const newNumsTwo = myNumers
-    .map((num) => num * 10)
-    .map((num) => num + 1)
-    .filter((num) => num >= 40)
+                    .map((num) => num * 10)
+                    .map((num) => num + 1)
+                    .filter((num) => num >= 40)
 
 console.log(newNumsTwo)
 
