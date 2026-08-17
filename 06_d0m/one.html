@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <mata charset="UTE-8">
 
-            <title>DOM learning</title>
-    </head>
-    <body>
-        <div class="bg-black">
-            <h1 class="heading"DOM learning on Chai aur ode</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </body>
+<head>
+    <!--Character encoding set karta hai -->
+    <meta charset="UTF-8">
+
+    <!-- Browser tab me page ka naam -->
+    <title>DOM Learning</title>
+
+    <style>
+        /* BG BLACK */
+        /* bg-black class background ko dark aur text ko white banati hai */
+        .bg-black {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<!-- BODY -->
+<!-- bg-black class body par apply ki gayi hai -->
+<body class="bg-black">
+
+    <!-- DIV -->
+    <!-- div ek container hai jo andar ke elements ko group karta hai -->
+    <div>
+
+        <!-- H1 -->
+        <!-- id title ko JavaScript me getElementById se select kar sakte hain -->
+        <!-- class heading styling ya class selector ke liye use ho sakti hai -->
+        <h1 id="title" class="heading">
+            DOM Learning on Chai aur Code
+
+            <!-- SPAN -->
+            <!-- display none ki wajah se ye text page par visible nahi hoga -->
+            <span style="display: none;">test text</span>
+        </h1>
+
+        <!-- H2 -->
+        <!-- Same tag ke multiple elements ho sakte hain -->
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+
+        <!-- PARAGRAPH -->
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <!-- INPUT -->
+        <!-- password type user ke typed characters ko hide karta hai -->
+        <input type="password" name="" id="">
+
+        <!-- UNORDERED LIST -->
+        <ul>
+
+            <!-- LIST ITEM -->
+            <!-- Sabhi li elements ki class same hai isliye querySelectorAll se select kar sakte hain -->
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+
+        </ul>
+    </div>
+
+</body>
 </html>
