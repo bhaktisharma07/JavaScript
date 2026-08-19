@@ -12,12 +12,149 @@
 <body style="background-color: #212121; color: #fff;">
 
     <div class="parent">
+
+        <!-- this is a comment -->
+
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
+
     </div>
 
 </body>
+
+<script>
+
+    // PARENT
+
+    const parent = document.querySelector(".parent")
+
+    console.log(parent)
+
+    /*
+    querySelector first matching element ko select karta hai
+
+    Yaha .parent class wala div select ho raha hai
+    */
+
+
+    console.log(parent.children)
+
+    /*
+    children parent ke andar ke saare HTML element children deta hai
+
+    Yaha day wale 4 div elements milenge
+    */
+
+
+    console.log(parent.children[1].innerHTML)
+
+    /*
+    children indexing 0 se start hoti hai
+
+    children[0] Monday
+    children[1] Tuesday
+    children[2] Wednesday
+    children[3] Thursday
+
+    innerHTML element ke andar ka content deta hai
+    */
+
+
+    // LOOP
+
+    for (let i = 0; i < parent.children.length; i++) {
+
+        console.log(parent.children[i].innerHTML)
+
+    }
+
+    /*
+    parent.children.length total child elements deta hai
+
+    Loop ek ek child ko access karta hai
+
+    innerHTML har day ka text print karega
+    */
+
+
+    // STYLE
+
+    parent.children[1].style.color = "orange"
+
+    /*
+    children[1] Tuesday hai
+
+    style.color use karke uska text color orange kar diya
+    */
+
+
+    // FIRST AND LAST ELEMENT
+
+    console.log(parent.firstElementChild)
+
+    console.log(parent.lastElementChild)
+
+    /*
+    firstElementChild parent ka first HTML element deta hai
+
+    Yaha Monday wala div milega
+
+    lastElementChild parent ka last HTML element deta hai
+
+    Yaha Thursday wala div milega
+    */
+
+
+    // DAY ONE
+
+    const dayOne = document.querySelector(".day")
+
+    console.log(dayOne)
+
+    /*
+    querySelector sirf first matching element select karta hai
+
+    Isliye yaha Monday wala div milega
+    */
+
+
+    console.log(dayOne.parentElement)
+
+    /*
+    parentElement current element ka parent deta hai
+
+    Monday ka parent .parent wala div hai
+    */
+
+
+    console.log(dayOne.nextElementSibling)
+
+    /*
+    nextElementSibling current element ke next HTML element ko deta hai
+
+    Monday ke baad Tuesday hai
+    Isliye Tuesday wala div milega
+    */
+
+
+    // NODES
+
+    console.log("NODES: ", parent.childNodes)
+
+    /*
+    childNodes parent ke andar ke saare nodes deta hai
+
+    Isme sirf HTML elements nahi hote
+
+    Text nodes bhi hote hain
+
+    Comment bhi node hota hai
+
+    Isliye childNodes ki length children se zyada ho sakti hai
+    */
+
+</script>
 
 </html>
